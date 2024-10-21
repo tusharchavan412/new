@@ -4,7 +4,9 @@ pipeline{
  stages{
    stage("stage-1"){
   steps{
-  sleep 10
+  sh '''
+  rm -rf *
+  '''
   }
  } 
  stage("stage-2"){
